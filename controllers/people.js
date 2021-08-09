@@ -12,7 +12,6 @@ exports.getPosts = (req, res) => {
 
 exports.getPostsBySSN = (req, res) => {
   if (persons.length > 0) {
-    console.log(persons);
     persons.forEach(element => {
 
       if (req.params.socialSecurityNumber == element.socialSecurityNumber) {
@@ -53,7 +52,6 @@ exports.createPost = (req, res) => {
 
 exports.updatePut = (req, res) => {
 
-  console.log(ssns);
   req.body.forEach(element => {
     if ((ssns.includes(req.params.socialSecurityNumber)) && (req.params.socialSecurityNumber == element.socialSecurityNumber)) {
       persons = persons.filter(({ socialSecurityNumber }) => socialSecurityNumber !== element.socialSecurityNumber);
