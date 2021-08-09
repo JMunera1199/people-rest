@@ -16,7 +16,7 @@ module.exports = {
         var userSchema = {
             "id": "/Person", "type": "object", "properties": {
                 "firstName": { "type": "string" }, "lastName": { "type": "string" },
-                "dateOfBirth": { "type": "string" }, "emailAddress": { "type": "string", "format": "email" }, "socialSecurityNumber": { "type": "string" }
+                "dateOfBirth": { "type": "string", "format": "date" }, "emailAddress": { "type": "string", "format": "email" }, "socialSecurityNumber": { "type": "string" }
             },
             "required": ["firstName", "lastName", "dateOfBirth", "emailAddress", "socialSecurityNumber"], "additionalProperties": false
         };
