@@ -1,0 +1,14 @@
+GET /person
+http://localhost:8080/people/person
+
+GET /person/:socialSecurityNumber
+http://localhost:8080/people/person/111-111-2222
+
+POST /person
+http://localhost:8080/people/person/111-111-2222
+
+PUT /person/:socialSecurityNumber
+http://localhost:8080/people/person/111-111-2222
+
+DELETE /person/:socialSecurityNumber
+http://localhost:8080/people/person/111-111-1111
