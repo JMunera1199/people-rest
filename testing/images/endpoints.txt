@@ -5,7 +5,7 @@ GET /person/:socialSecurityNumber
 http://localhost:8080/people/person/111-111-2222
 
 POST /person
-http://localhost:8080/people/person/111-111-2222
+http://localhost:8080/people/person
 
 PUT /person/:socialSecurityNumber
 http://localhost:8080/people/person/111-111-2222
